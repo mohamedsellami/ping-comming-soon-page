@@ -20,7 +20,7 @@ function checkEmail() {
     input.classList.add("editPlaceholder");
   } else if (
     !emailRegex.test(input.value) &&
-    input.style.cssText == "border: 1px solid rgb(255, 82, 99);"
+    input.attributes.placeholder.value != "example@email/com"
   ) {
     input.insertAdjacentHTML(
       "afterend",
