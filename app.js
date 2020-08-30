@@ -33,11 +33,9 @@ function checkEmail() {
 }
 input.addEventListener("input", clear);
 function clear() {
-  if (input.style.cssText == "border: 1px solid rgb(255, 82, 99);") {
     input.style.border = "1px solid hsl(223, 100%, 88%)";
     document.querySelector(".alert").remove();
     input.removeAttribute("placeholder");
     input.setAttribute("placeholder", "Your email address...");
     input.classList.remove("editPlaceholder");
-  }
 }
