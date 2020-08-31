@@ -6,7 +6,7 @@ const emailRegex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\
 function checkEmail() {
   if (
     input.value == "" &&
-    input.attributes.placeholder.value != "example@email/com"
+    input.style.cssText != "border: 1px solid rgb(255, 82, 99);"
   ) {
     input.insertAdjacentHTML(
       "afterend",
